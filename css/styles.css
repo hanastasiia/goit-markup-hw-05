@@ -635,3 +635,10 @@ button:focus {
 .modal-button:focus {
   fill: #ffffff;
 }
+
+
+.modal-button:hover,
+.modal-button:focus { 
+  background-color: #404bbf;
+  border: none;
+}
