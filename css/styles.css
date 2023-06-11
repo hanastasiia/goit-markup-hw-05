@@ -638,3 +638,9 @@ button:focus {
   border: none;
   fill: #ffffff;
 }
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
