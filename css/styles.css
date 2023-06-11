@@ -181,6 +181,7 @@ button:focus {
   color: #2e2f42;
   padding: 24px 0;
   display: block;
+  position: relative;
 }
 
 .header-list-menu:hover,
@@ -512,12 +513,12 @@ button:focus {
 
 .pfl-row-list {
   width: calc((100% - 48px) / 3);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: 
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .cards-cover-wrap {
   position: relative;
@@ -550,9 +551,9 @@ button:focus {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.pfl-row-link:hover,
+.pfl-row-link:hover .cards-cover-text,
 .pfl-row-link:focus .cards-cover-text {
-  transform: translateY(0%)
+  transform: translateY(0%);
 }
 
 .pfl-main-div {
