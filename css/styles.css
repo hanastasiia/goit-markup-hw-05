@@ -174,19 +174,21 @@ button:focus {
 }
 
 .header-list-menu {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
   padding: 24px 0;
-  display: block;
   position: relative;
   color: #404bbf;
+  width: 100%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
-.header-list-menu::after {
-  content: " " ;
+.header-list-menu:after {
+  content:'' ;
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -524,7 +526,7 @@ button:focus {
 
 .pfl-row-list {
   width: calc((100% - 48px) / 3);
-  transition: 
+  transition:
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
