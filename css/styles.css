@@ -10,6 +10,7 @@
   --color-white: #ffffff;
   --color-dairy: #fcfcfc;
 }
+
 h1,
 h2,
 h3,
@@ -35,6 +36,11 @@ img {
   margin: 0 auto;
   width: 1158px;
   padding: 0 15px;
+}
+
+@keyframes move_up {
+
+  
 }
 
 .body {
@@ -512,6 +518,7 @@ button:focus {
 
 .pfl-row-list {
   width: calc((100% - 48px) / 3);
+
 }
 
 
