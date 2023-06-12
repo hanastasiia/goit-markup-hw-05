@@ -183,12 +183,8 @@ button:focus {
   letter-spacing: 0.02em;
   padding: 24px 0;
   position: relative;
-  color: #404bbf;
+  color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-list-menu.current{
-  color: #404bbf;
 }
 
 
@@ -199,12 +195,21 @@ button:focus {
   bottom: -1px;
   height: 4px;
   width: 100%;
-  background-color: #404bbf;
   border-radius: 2px;
+  background-color: #404bbf;
+  opacity: 0;
 }
 
+.header-list-menu:hover:after,
+.header-list-menu:focus:after,
+.header-list-menu.current:after {
+  opacity: 1;
+} 
+
+
 .header-list-menu:hover,
-.header-list-menu:focus {
+.header-list-menu:focus,
+.header-list-menu.current {
   color: #404bbf;
 }
 
@@ -229,7 +234,6 @@ button:focus {
 }
 
 .title-hero {
-  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
   font-size: 56px;
